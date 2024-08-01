@@ -1,9 +1,16 @@
 #!/bin/bash
-touch results.csv && sudo docker run -v $PWD/queries:/example-queries -v $PWD/results.csv:/results.csv gosom/google-maps-scraper -depth 1 -input /example-queries -results /results.csv -exit-on-inactivity 1m -email
-# Read the first line from the file 'queries'
-first_line=$(head -n 1 queries)
-# capture the first line of 'queries' 
-first_line=$(head -n 1 queries | tr ' ' '_')
+
+#Die notwendigen Ordner bauen
+mkdir results
+#Temp-Resultate Datei
+touch results.csv
+
+#Genesteter Docker-Container mit Scraping Software
+ sudo docker run -v $PWD/ziel:/example-queries -v $PWD/results.csv:/results.csv gosom/google-maps-scraper -depth 1 -input /example-queries -results /results.csv -exit-on-inactivity 1m -email
+# Read the first line from the file 'ziel'
+first_line=$(head -n 1 ziel)
+# capture the first line of 'ziel' 
+first_line=$(head -n 1 ziel | tr ' ' '_')
 
 # Ensure the 'results' directory exists
 mkdir -p results

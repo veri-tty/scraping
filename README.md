@@ -16,4 +16,7 @@ Das installieren dauert ca. 5 Minuten, danach geht das Scrapen an sich sehr schn
 3. Öffne das Programm "Ubuntu"
    a. gebe "sudo apt update && sudo apt install csvkit docker" ein
    b. gebe das passwort ein "scraper"
-   c.
+   c.gebe "git clone https://github.com/veri-tty/scraping ~/" ein
+
+
+

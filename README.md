@@ -15,7 +15,7 @@ Das installieren dauert ca. 5 Minuten, danach geht das Scrapen an sich sehr schn
 Nutzung
    a. öffne Arch
    b. gebe "cd scraping" ein
-   c. öffne den Windows file Explorer und clicke auf das arvh (sollte in der linken leiste angepinnt sein ) und öffne darin den scraping Ordner
+   c. öffne den Windows file Explorer und clicke auf das arch (sollte in der linken leiste angepinnt sein ) und öffne darin den scraping Ordner
 d. öffne darin "queries" mit Text editor und gib ein, was du suchen möchtest, z.B. Kiosk in spandau
 (du kannst auch nach mehreren Sachen suchen, dafür einfach eine neue Zeile)
 e. gebe in Arch ./go.sh ein
